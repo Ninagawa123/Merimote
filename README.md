@@ -72,3 +72,11 @@ Wiiリモコンの1,2ボタンを同時押しするとペアリングします�
 接続先のMacアドレスを設定できるようになるので、メモしたアドレスを上書き登録します。  
 M5StampPICOの起動後にPSボタンを押すと、ペアリングが確立します。  
 
+## 動作確認  
+簡易的に動作確認ができるArduino UNO用のサンプルスクリプトを用意しました。  
+Arduino UnoなどとM5StampPICOをSCK同士、SDA同士、V5、GNDをそれぞれ結線し、Sample＞Merimote_Receiver.inoをArduino IDE等で書き込んでください。  
+実行後にシリアルモニタで下図のように動作確認ができます。  
+
+<img width="400" alt="Merimote_Receiver" src="https://github.com/Ninagawa123/Merimote/assets/8329123/2bd1d101-ddce-4497-9dcd-9cdfd1a659a0">
+
+
