@@ -3,7 +3,8 @@
 # Merimote v0.0.1  
 Merimoteは主にM5StampPICOを用いたマルチユースのリモコン受信デバイスです。  
 オープンソースのため拡張しやすく、好みのリモコン環境を構築できます。  
-Meridianシステムの一部ですが、Merimote単独でも利用することができます。  
+Meridianシステムの一部ですが、もちろんMerimote単独でも利用することができます。  
+M5StampPICOとArduinoUNOの接続サンプルがREAD MEの最後の方にありますのでI2Cの動作確認もすぐに試せます。  
 Merimote is a module for receiving remote control signals.  
 Merimote primarily uses the M5StampPICO as a multi-use remote control receiving device. It is open source, making it easy to extend and allows for building a custom remote control environment. It is part of the Meridian system, but can also be used independently.  
   
