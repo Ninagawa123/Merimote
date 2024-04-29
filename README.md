@@ -67,7 +67,8 @@ Wiiリモコンの1,2ボタンを同時押しするとペアリングします�
   
 ## PS4リモコンの接続方法  
 #define MOUNT_JOYPAD 4 として書き込みます。  
-起動するとシリアルモニタにM5StampPICOのMACアドレスがxx:xx:xx:xx:xx:xxのフォーマットで表示されます。  
-**SixaxisPairTool**を検索してPCにダウンロードし、起動後にPS4リモコンをPCに接続すると、接続先のMacアドレスを上書きできるようになるので登録します。  
+起動するとシリアルモニタにM5StampPICOのMACアドレスがxx:xx:xx:xx:xx:xxのフォーマットで表示されるのでメモします。  
+**SixaxisPairTool**を検索してPCにダウンロードし、SixaxisPairToolの起動後にPS4リモコンをUSBケーブルでPCに接続します。  
+接続先のMacアドレスを設定できるようになるので、メモしたアドレスを上書き登録します。  
 M5StampPICOの起動後にPSボタンを押すと、ペアリングが確立します。  
 
