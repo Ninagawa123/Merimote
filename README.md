@@ -26,7 +26,7 @@ ESP32などで高速なWifi通信を行う場合、Bluetoothと併用するこ�
 
 |byte|0,1|2|3|4|5|6|7|8,9|  
 |----|---|---|---|---|---|---|---|---|    
-|short|0|1上位|1下位||2上位|2下位||3上位|3下位|4|  
+|short|0|1上位|1下位|2上位|2下位|3上位|3下位|4|  
 ||button|Stick_L_x|Stick_L_y|Stick_R_x|Stick_R_y|L2_analog|R2_analog|checksum|  
   
 Short型でindex0〜4、Byte型でindex0〜9となる共用体配列です。  
