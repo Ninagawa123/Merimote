@@ -41,5 +41,33 @@ Short型でindex0〜4、Byte型でindex0〜9となる共用体配列です。
 This is a union array with Short type ranging from index 0 to 4 and Byte type from index 0 to 9. The checksum is calculated by summing up Short type from index 0 to 3 and then inverting the bits. For further specifications, please refer to Meridian, which this complies with.  
 
 ## How To Install  
-PlatformIOでMerimote>M5StampPICOフォルダを開き、M5StackPICOにインストールします。  
+PlatformIOでMerimote>MerimotePICOフォルダを開き、M5StackPICOにインストールします。  
 通信先となるマイコンボードとSCK同士、SDA同士、GND、5Vを接続します。  
+
+## How To Use  
+config.hで設定を行います。  
+#define MOUNT_JOYPAD 4 // 接続するジョイパッドの種類です。現在は4:PS4 ,5:Wii_yoko が使えます。  
+#define I2C_DEV_ADDR 0x58 // I2Cデバイスアドレスを設定できます。  
+#define MONITOR_JOYPAD 1 // 動作確認用にシリアルモニタで入力データを表示できます。（0:OFF, 1:ボタンのみ, 2:アナログ込み） 
+  
+## LED  
+PIN25(DAC)とGNDの間に抵抗入りLEDを接続すると、リモコンペアリング前は点滅し、ペアリング後に常時点灯となります。  
+  
+## Reset Button  
+PIN32と5Vをショートするとソフトウェアリセットし、再度ペアリングができるようになります。  
+  
+## Trouble Shooting   
+接続が確立しない場合、  
+#define BT_REMOVE_BONDED_DEVICES 1  
+を書き込んで再起動すると、BTデバイスの登録がリセットされ、接続できるようになるかもしれません。  
+  
+## Wiiリモコンの接続方法  
+#define MOUNT_JOYPAD 5 として書き込みます。  
+Wiiリモコンの1,2ボタンを同時押しするとペアリングします。  
+  
+## PS4リモコンの接続方法  
+#define MOUNT_JOYPAD 4 として書き込みます。  
+起動するとシリアルモニタにM5StampPICOのMACアドレスがxx:xx:xx:xx:xx:xxのフォーマットで表示されます。  
+**SixaxisPairTool**を検索してPCにダウンロードし、起動後にPS4リモコンをPCに接続すると、接続先のMacアドレスを上書きできるようになるので登録します。  
+M5StampPICOの起動後にPSボタンを押すと、ペアリングが確立します。  
+
