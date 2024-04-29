@@ -33,10 +33,10 @@ The default I2C address for the M5StampPICO is set to 0x58. It returns the follo
 
 |byte|0,1|2|3|4|5|6|7|8,9|  
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|  
-|short|[0]|[1]high|[1]low|[2]high|[2]low|[3]high|[3]low|[4]|  
+|short|0|1_high|1_low|2_high|2_low|3_high|3_low|4|  
 ||button|Stick_L_x|Stick_L_y|Stick_R_x|Stick_R_y|L2_analog|R2_analog|checksum|  
+||button|BIN|-127to127|-127to127|-127to127|0to255|0to255|HEX|  
 
-  
 Short型でindex0〜4、Byte型でindex0〜9となる共用体配列です。  
 チェックサムはshort型のindex0~3までを合計後にビット反転したものになります。  
   
