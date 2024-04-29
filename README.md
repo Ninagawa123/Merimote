@@ -26,7 +26,7 @@ ESP32などで高速なWifi通信を行う場合、Bluetoothと併用するこ�
 
 |byte|0,1|2|3|4|5|6|7|8,9|  
 |----|---|---|---|---|---|---|---|---|    
-|byte|ボタンデータ|Stick_L_x|Stick_L_y|Stick_R_x|Stick_R_y|L2アナログ|R2アナログ|checksum|  
+||button|Stick_L_x|Stick_L_y|Stick_R_x|Stick_R_y|L2_analog|R2_analog|checksum|  
 
 Short型で[0]~[4],Byte型で[0]~[9]となる共用体配列です。  
 チェックサムはshort型で[0]~[3]まで合計したものをビット反転したものになります。  
