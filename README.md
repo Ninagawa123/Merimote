@@ -28,7 +28,7 @@ ESP32などで高速なWifi通信を行う場合、Bluetoothと併用するこ�
 |----|---|---|---|---|---|---|---|---|    
 ||button|Stick_L_x|Stick_L_y|Stick_R_x|Stick_R_y|L2_analog|R2_analog|checksum|  
   
-Short型でindex0~4、Byte型でindex0~9となる共用体配列です。  
+Short型でindex0〜4、Byte型でindex0〜9となる共用体配列です。  
 チェックサムはshort型のindex0~3までを合計後にビット反転したものになります。  
   
 その他の仕様については[Meridian](https://ninagawa123.github.io/Meridian_info/#aboutMeridim/remort_controller/)に準拠します。  
