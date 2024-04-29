@@ -31,11 +31,11 @@ ESP32などで高速なWifi通信を行う場合、Bluetoothと併用するこ�
 
 The default I2C address for the M5StampPICO is set to 0x58. It returns the following array data when called:
 
-|byte|0,1|2|3|4|5|6|7|8,9|  
+|byte index|0,1|2|3|4|5|6|7|8,9|  
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|  
-|short|0|1_high|1_low|2_high|2_low|3_high|3_low|4|  
+|short index|0|1_high|1_low|2_high|2_low|3_high|3_low|4|  
 ||button|Stick_L_x|Stick_L_y|Stick_R_x|Stick_R_y|L2_analog|R2_analog|checksum|  
-||BIN|-127to127|-127to127|-127to127|-127to127|0to255|0to255|HEX|  
+|Value|BIN|-127to127|-127to127|-127to127|-127to127|0to255|0to255|HEX|  
 
 Short型でindex0〜4、Byte型でindex0〜9となる共用体配列です。  
 チェックサムはshort型のindex0~3までを合計後にビット反転したものになります。  
