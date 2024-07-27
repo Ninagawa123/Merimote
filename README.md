@@ -48,11 +48,13 @@ PlatformIOでMerimote>MerimotePICOフォルダを開き、M5StackPICOにイン�
 
 ## How To Use  
 config.hで設定を行います。  
+
 ```
 #define MOUNT_JOYPAD 4 // 接続するジョイパッドの種類です。現在は4:PS4 ,5:Wii_yoko が使えます。  
 #define I2C_DEV_ADDR 0x58 // I2Cデバイスアドレスを設定できます。  
 #define MONITOR_JOYPAD 1 // 動作確認用にシリアルモニタで入力データを表示できます。（0:OFF, 1:ボタンのみ, 2:アナログ込み） 
-```  
+```
+
 ## LED  
 PIN25(DAC)とGNDの間に抵抗入りLEDを接続すると、リモコンペアリング前は点滅し、ペアリング後に常時点灯となります。  
   
