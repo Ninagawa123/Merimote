@@ -1,6 +1,6 @@
 <img width="400" alt="merimote" src="https://github.com/Ninagawa123/Merimote/assets/8329123/bf6307bb-e362-42b1-b21c-a4d0929c9ff5">
 
-# Merimote v0.0.1  
+# [Merimote v0.0.1](https://github.com/Ninagawa123/Merimote)  
 Merimoteは主にM5StampPICOを用いたマルチユースのリモコン受信デバイスです。  
 Arduino frameworkのオープンソースのため拡張しやすく、好みのリモコン環境を構築できます。  
 Meridianシステムの一部ですが、もちろんMerimote単独でも利用することができます。  
