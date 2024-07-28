@@ -1,4 +1,4 @@
-<img width="400" alt="merimote" src="https://github.com/Ninagawa123/Merimote/assets/8329123/bf6307bb-e362-42b1-b21c-a4d0929c9ff5">
+<img width="400" alt="merimote" src="https://github.com/user-attachments/assets/562b162e-1b4a-4766-8667-0760f6f7ee3f">
 
 # [Merimote v0.0.1](https://github.com/Ninagawa123/Merimote)  
 Merimoteは主にM5StampPICOを用いたマルチユースのリモコン受信デバイスです。  
